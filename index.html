@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Chen's GitHub Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .photo_container {
+            display: flex;
+        }
+        .photo_container img {
+            max-width: 30%;
+            height: auto;
+        }
+        languages {
+            display: flex;
+        }
+        .language img {
+            max-width: 34px;
+            height: auto;
+            margin-right: 15px;
+        }
+        .background-container {
+            background-image: url('photo.jpg');
+            background-size: cover; /* 背景图像覆盖整个容器 */
+            background-repeat: no-repeat; /* 禁止重复背景图像 */
+            background-attachment: fixed; /* 固定背景图像，使之不随滚动而移动 */
+        }
+        
+        /* 确保背景容器填满整个视口 */
+        .background-container {
+            position: fixed;
+            padding-left: 20px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- <header>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <div class="background-container">
+    <section id="introduction" class="section">
+        <div class="photo_container">
+            <div>
+                <h1>👋 Introduction</h1>
+                <p>Hi, I'm Stephen Chen. I graduated from SCIE in 2022 and obtained an MEng in Computer Science from UCL in 2026. 
+                <br>My primary passion lies in the realm of AI, with a particular focus on Natural Language Processing (NLP).</p>
+            </div>
+            <!-- <img src="photo.jpg" alt="Your Profile Picture"> -->
+        </div>
+    </section>
+    
+    <section id="Languages" class="section">
+        <div class="container">
+            <h1>🌟 Proficient Programming Languages</h1>
+            <!-- <p>Languages I use:</p> -->
+            <ul>
+                <div class="languages">
+                    <div class="language">
+                        <img src="java-icon.png" alt="Java Icon">
+                        <img src="c-icon.png" alt="C Icon">
+                        <img src="python-icon.png" alt="Python Icon">
+                        <img src="haskell-icon.png" alt="Haskell Icon">
+                        <img src="shell-icon.png" alt="Shell Icon">
+                    </div>
+     
+            </ul>
+        </div>
+    </section>
+    <section id="skills" class="section">
+        <div class="container">
+            <h1>🚀 Skills</h1>
+            <!-- <p>My skills include:</p> -->
+            <ul>
+                <li>🖥️ Java Web Development</li>
+                <li>🐍 Python Application Development</li>
+                <li>🤖 Machine Learning</li>
+                <li>🧠 Neural Network Design and Optimization</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="projects" class="section">
+        <div class="container">
+            <h1>🛠️ Projects</h1>
+            <!-- <p>Here are some of the projects I've worked on:</p> -->
+            <ul>
+                <li>📂 Data Storage Java Web Application</li>
+                <li>🕹️ AI Player for Tetris</li>
+                <li>🌀 Random Maze Generation and Intelligent Pathfinding</li>
+                <li>🧩 Propositional Logic Practice System for Logic Students</li>
+                <li>🚢 Titanic Survival Probability Data Analysis</li>
+                <li>🐱 Cat Recognition with Deep Neural Networks</li>
+            </ul>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Stephen Chen</p>
+    </footer>
+    </div>
+</body>
+</html>
