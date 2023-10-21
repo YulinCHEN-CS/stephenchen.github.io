@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,39 +6,57 @@
     <title>Stephen Chen's GitHub Profile</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .photo_container {
+        .container {
             display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
         }
         .photo_container img {
-            max-width: 30%;
+            max-width: 20%;
+            margin-top: 30px;
             height: auto;
         }
+        .text {
+            flex: 1;
+            padding: 20px;
+            
+        }
+        
         languages {
             display: flex;
         }
+        
         .language img {
             max-width: 34px;
             height: auto;
             margin-right: 15px;
         }
         .background-container {
-            background-image: url('photo.jpg');
+            background-image: url('doodles.webp');
             background-size: cover; /* 背景图像覆盖整个容器 */
-            background-repeat: no-repeat; /* 禁止重复背景图像 */
-            background-attachment: fixed; /* 固定背景图像，使之不随滚动而移动 */
+            /* background-repeat: no-repeat; 禁止重复背景图像 */
+            background-attachment: fixed; 
         }
         
         /* 确保背景容器填满整个视口 */
         .background-container {
-            position: fixed;
+            /* position: fixed; */
             padding-left: 20px;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: auto;
         }
+
+        ul {
+            text-align: left;
+        }
+        s
         body {
             font-size: 120%; /* 放大 20% */
+            text-align: center;
         }
     </style>
 </head>
@@ -53,13 +72,17 @@
     </header> -->
     <div class="background-container">
     <section id="introduction" class="section">
-        <div class="photo_container">
+        <div class="container">
+            <h1>👋 Introduction</h1>
+        </div>    
+        <div class="container">
             <div>
-                <h1>👋 Introduction</h1>
                 <p>Hi, I'm Stephen Chen. I graduated from SCIE in 2022 and obtained an MEng in Computer Science from UCL in 2026. 
                 <br>My primary passion lies in the realm of AI, with a particular focus on Natural Language Processing (NLP).</p>
             </div>
-            <!-- <img src="photo.jpg" alt="Your Profile Picture"> -->
+            <div class="photo_container">
+                <img src="photo_og.jpg" alt="Your Profile Picture">
+            </div>
         </div>
     </section>
     
@@ -107,10 +130,15 @@
             </ul>
         </div>
     </section>
-    
-    <footer>
-        <p>&copy; 2023 Stephen Chen</p>
-    </footer>
-    </div>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h1>📫 Contact Me</h1>
+            <p>Feel free to contact me via email at <a href="mailto:Steph0866Chan@gmail.com">Steph0866Chan@gmail.com</a></p>
+            <footer>
+                <p>&copy; 2023 Stephen Chen</p>
+            </footer>
+        </div>
+    </section>
 </body>
 </html>
